@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Publications | Rajib Baran Roy</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+details {
+    margin-bottom: 12px;
+    background: #f4f6f8;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<script>
+function searchPublications() {
+    let input = document.getElementById("searchBox").value.toLowerCase();
+    let items = document.getElementsByClassName("pub-item");
+
+    for (let i = 0; i < items.length; i++) {
+        let text = items[i].innerText.toLowerCase();
+        if (text.includes(input)) {
+            items[i].style.display = "";
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+    <a href="index.html">Home</a>
+</div>
+
+<h1>Research Publications</h1>
+
+<!-- Impact Section -->
+<h3>Research Impact</h3>
+<ul>
+    <li><b>Google Scholar:</b> Citations – 492, h-index – 13, i10-index – 16</li>
+    <li><b>Scopus:</b> Citations – 356, h-index – 7</li>
+</ul>
+
+<!-- Search Box -->
+<input type="text" id="searchBox" class="search-box" onkeyup="searchPublications()" placeholder="Search publications (author, title, journal, year...)">
+
+---
+
+<!-- BOOK -->
+<details open>
+<summary>📘 Book</summary>
+<ul>
+<li class="pub-item">
+M. R. Amin and R. B. Roy, <i>Electrical Power System Analysis: Control of Voltage and Reactive Power</i>, LAP LAMBERT Academic Publishing, Germany.
+</li>
+</ul>
+</details>
+
+---
+
+<!-- JOURNALS -->
+<details open>
+<summary>📄 Journal Publications</summary>
+<ul>
+
+<li class="pub-item">
+R. B. Roy et al., “Impact of Coordinated Electric Ferry Charging on Distribution Network Using Metaheuristic Optimization,” <i>Energies</i>, 2025.
+</li>
+
+<li class="pub-item">
+R. B. Roy et al., “Impact Analysis on Distribution Network due to Coordinated Electric Ferry Charging,” <i>IET Energy Systems Integration</i>, 2024.
+</li>
+
+<li class="pub-item">
+R. B. Roy et al., “Impact Analysis of Uncoordinated Electric Ferry Charging on Distribution Network,” <i>e-Prime (Elsevier)</i>, 2024.
+</li>
+
+<li class="pub-item">
+R. B. Roy et al., “Optimizing Load Frequency Control in Marine Microgrids using Meta-Heuristic Techniques,” <i>Energies</i>, 2023.
+</li>
+
+<li class="pub-item">
+R. B. Roy et al., “Optimizing Dynamic Ferry Loads with Intelligent Power Management,” <i>Energy Reports</i>, 2023.
+</li>
+
+<li class="pub-item">
+R. B. Roy et al., “ANN Algorithms for MPPT Energy Harvesting in Solar PV System,” <i>IEEE Access</i>, 2021.
+</li>
+
+<li class="pub-item">
+F. A. Hossain et al., “Optimal Placement and Sizing of Distributed Generators,” <i>Energies</i>, 2021.
+</li>
+
+<li class="pub-item">
+R. B. Roy et al., “Wireless Sensor Network with Solar PV System for IoT Applications,” <i>Micromachines</i>, 2021.
+</li>
+
+<li class="pub-item">
+R. B. Roy et al., “Grid Impacts of Uncoordinated Fast Charging of Electric Ferries,” <i>Batteries</i>, 2021.
+</li>
+
+</ul>
+</details>
+
+---
+
+<!-- CONFERENCES -->
+<details open>
+<summary>🎤 Conference Publications</summary>
+<ul>
+
+<li class="pub-item">R. B. Roy et al., IEEE i-COSTE, 2024.</li>
+<li class="pub-item">R. B. Roy et al., AUPEC, 2024.</li>
+<li class="pub-item">R. B. Roy et al., REPE, 2024.</li>
+<li class="pub-item">R. B. Roy et al., ICISET, 2024.</li>
+<li class="pub-item">R. B. Roy et al., ICECCME, 2022.</li>
+<li class="pub-item">R. B. Roy et al., SMART GENCON, 2022.</li>
+<li class="pub-item">R. B. Roy et al., AUPEC, 2021.</li>
+
+</ul>
+</details>
+
+---
+
+<!-- FOOTER -->
+<hr>
+<p style="text-align:center; font-size: 13px;">
+© 2026 Rajib Baran Roy | Publications Page
+</p>
+
+</div>
+
+</body>
+</html>
